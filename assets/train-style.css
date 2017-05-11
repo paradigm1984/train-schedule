@@ -152,6 +152,7 @@ input.input-field {
 }
 
 input::placeholder {
+
 	color: lightgray;
 }
 
@@ -165,7 +166,11 @@ input.input-button {
 	font-family: helvetica;
 }
 
-
+td.cell {
+	
+	font-family: helvetica;
+	color: #30122D;
+}
 
 
 

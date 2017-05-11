@@ -114,7 +114,7 @@ $(document).ready(function() {
 
 		// wouldve liked to style the <td>'s but wasnt sure how to grab them after
 		// i created them
-		$("#trainScheduleInfo").append("<tr><td>" + trainName + "</td><td>" + destination + "</td><td>" + frequency +  "</td><td>" + nextTrainConverted + "</td><td>" + arrivalCountdown + " Minutes" + "</td></tr>");
+		$("#trainScheduleInfo").append("<tr><td class='cell'>" + trainName + "</td><td class='cell'>" + destination + "</td><td class='cell'>" + frequency +  "</td><td class='cell'>" + nextTrainConverted + "</td><td class='cell'>" + arrivalCountdown + " Minutes" + "</td></tr>");
 
 	});
 });

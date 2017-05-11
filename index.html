@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+	<head>
+		
+		<meta charset="UTF-8">
+		<title> Train Activity </title>
+
+		<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="assets/train-style.css">
+
+	</head>
+ 
+	<body id="background">
+
+		<header class="header">
+			<h1 class="app-header"> Train Schedules </h1>
+		</header>
+
+		<div class="row">
+			<div class="col-xs-2"></div><!-- spacerrrr -->
+			<div class="col-xs-8 body">
+				<div class="body-header-container">
+					<h3 class="body-header"> Current Train Schedules </h3>
+				</div>
+				<div class="table-responsive">
+					<table class="table container" id="trainScheduleInfo">
+						<tr class="first-row">
+						<th class="table-header">Train Name</th>
+						<th class="table-header">Destination</th> 
+						<th class="table-header">Frequency (min.)</th>
+						<th class="table-header">Next Arrival</th>
+						<th class="table-header">Minutes Away</th>
+						</tr><!-- END "first-row" -->
+					</table>	
+					<h2 class="current-time" id="currentTime"></h2>
+				</div><!-- END "table-responsive" -->	
+			</div><!-- END "body-1" -->
+			<div class="col-xs-2"></div><!-- spacerrrr -->
+		</div><!-- END "row" -->
+		<div class="row">
+			<div class="col-xs-2"></div><!-- spacerrrr -->
+			<div class="col-xs-8 body">
+				<div class="body-header-container">
+					<h3 class="body-header"> Add A Train </h3>
+				</div>
+				<div class="input-container">
+					<form class="input-form">
+					  <p class="input-name"> Train name: </p><input class="input-field" id ="trainName" type="text" name="train-name" placeholder="Speedy">
+					  <br>
+					  <p class="input-name"> Destination: </p><input class="input-field" id ="destination" type="text" name="destination" placeholder="New York, New York">
+					  <br>
+					  <p class="input-name"> First Train Time (Military Time): </p><input class="input-field" id ="firstTrainTime" type="text" name="first-train-time" placeholder="00:00:00">
+					  <br>
+					  <p class="input-name"> Frequency (min): </p><input class="input-field" id ="frequency" type="text" name="frequency"
+					  placeholder="0">
+					  <br>
+					  <input class="input-button" id="addTrain" type="submit" value="Submit">
+					</form><!-- END "input-form" -->
+				</div><!-- END "input-container" -->	
+			</div><!-- END "body-2" -->
+			<div class="col-xs-2"></div><!-- spacerrrr -->
+		</div><!-- END "row" -->
+
+ 		
+
+		<script   src="http://code.jquery.com/jquery-2.2.4.min.js" 
+			integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			crossorigin="anonymous"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+		<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+		<script type="text/javascript" src="assets/train-script.js"></script>
+
+	</body>
+ 
+</html>
